@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: #4caf50;
   --secondary-color: #1e3a8a;
@@ -9,8 +12,8 @@
   --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.03);
   --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.05);
   --shadow-lg: 0 15px 35px rgba(0, 0, 0, 0.1);
-  --font-family-body: 'Inter', sans-serif;
-  --font-family-heading: 'Outfit', sans-serif;
+  --font-family-body: "Inter", sans-serif;
+  --font-family-heading: "Outfit", sans-serif;
 }
 
 * {
@@ -71,7 +74,9 @@ body {
   color: var(--text-dark);
   font-size: 16px;
   font-weight: 500;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
   display: inline-block;
 }
 
@@ -384,11 +389,11 @@ body {
   #root {
     padding: 0 32px;
   }
-  
+
   .hero {
     gap: 30px;
   }
-  
+
   .products {
     gap: 40px;
   }
@@ -434,7 +439,7 @@ body {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
     border-radius: 0 0 16px 16px;
     border-top: 1px solid var(--border-color);
-    
+
     /* Animation states */
     opacity: 0;
     transform: translateY(-10px);
@@ -627,7 +632,11 @@ body {
 
 .popup-timer-bar {
   height: 100%;
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   width: 100%;
   transform-origin: left;
   animation: shrinkWidth 4.5s linear forwards;
@@ -635,21 +644,42 @@ body {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes scaleIn {
-  from { transform: scale(0.9); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes shrinkWidth {
-  from { transform: scaleX(1); }
-  to { transform: scaleX(0); }
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
 }
 
 @keyframes pulseLogo {
-  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0px rgba(76,175,80,0)); }
-  50% { transform: scale(1.05); filter: drop-shadow(0 0 10px rgba(76,175,80,0.3)); }
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0px rgba(76, 175, 80, 0));
+  }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(76, 175, 80, 0.3));
+  }
 }
