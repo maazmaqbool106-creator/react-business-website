@@ -1,10 +1,10 @@
 import WelcomePopup from "./components/WelcomePopup";
 import Navbar from "./components/Navbar";
-import Hero from "./components/hero";
-import Mission from "./components/Mission";
-import Products from "./components/Products";
-import Partners from "./components/Partners";
-import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Mission from "./components/mission";
+import Products from "./components/products";
+import Partners from "./components/partners";
+import Footer from "./components/footer";
 import "./index.css";
 function App() {
   return (
