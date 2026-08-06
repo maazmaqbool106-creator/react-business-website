@@ -1,6 +1,6 @@
 import WelcomePopup from "./components/WelcomePopup";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Hero from "./components/hero";
 import Mission from "./components/mission";
 import Products from "./components/products";
 import Partners from "./components/partners";
